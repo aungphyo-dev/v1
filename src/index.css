@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.violet-gradient {
+    background: #804dee;
+    background: linear-gradient(-90deg, #804dee 0%, rgba(60, 51, 80, 0) 100%);
+    background: -webkit-linear-gradient(
+            -90deg,
+            #804dee 0%,
+            rgba(60, 51, 80, 0) 100%
+    );
+}
+textarea {
+    resize: none;
+}
+.obj-p{
+    object-position: bottom;
+}
