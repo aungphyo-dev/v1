@@ -4,7 +4,7 @@ import {AiFillHtml5} from 'react-icons/ai'
 import {DiCss3} from 'react-icons/di'
 import {SiJavascript} from 'react-icons/si'
 import {BsFillBootstrapFill,BsGit} from 'react-icons/bs'
-import {FaSass} from 'react-icons/fa'
+import {FaSass,FaLaravel} from 'react-icons/fa'
 import {SiTailwindcss} from 'react-icons/si'
 import {RiReactjsFill} from 'react-icons/ri'
 import {SiRedux} from 'react-icons/si'
@@ -24,7 +24,11 @@ const Services = () => {
                             <h1 className='text-gray-700 dark:text-white text-2xl font-bold uppercase'>Services</h1>
                         </div>
                         <div className='flex justify-evenly items-center w-full flex-wrap gap-y-4'>
-                            <div className="relative bg-white dark:bg-gray-700 py-6 px-6 rounded-3xl w-full md:w-64 my-4 shadow-xl">
+                            <motion.div
+                                initial={{ opacity: 0,y:300}}
+                                        transition={{ duration: 0.5}}
+                                        whileInView={{ opacity: 1,y:0  }}
+                                className="relative bg-white dark:bg-gray-700 py-6 px-6 rounded-3xl w-full md:w-64 my-4 shadow-xl">
                                 <div
                                     className=" text-white flex items-center absolute rounded-full py-4 px-4 shadow-xl bg-green-500 left-4 -top-6">
                                     <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none"
@@ -44,8 +48,12 @@ const Services = () => {
                                             me →</a>
                                     </div>
                                 </div>
-                            </div>
-                            <div className="relative bg-white dark:bg-gray-700 py-6 px-6 rounded-3xl w-full md:w-64 my-4 shadow-xl">
+                            </motion.div>
+                            <motion.div
+                                initial={{ opacity: 0,y:300}}
+                                        transition={{ duration: 0.5}}
+                                        whileInView={{ opacity: 1,y:0  }}
+                                className="relative bg-white dark:bg-gray-700 py-6 px-6 rounded-3xl w-full md:w-64 my-4 shadow-xl">
                                 <div
                                     className=" text-white flex items-center absolute rounded-full py-4 px-4 shadow-xl bg-blue-500 left-4 -top-6">
                                     <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none"
@@ -65,8 +73,12 @@ const Services = () => {
                                             me →</a>
                                     </div>
                                 </div>
-                            </div>
-                            <div className="relative bg-white dark:bg-gray-700 py-6 px-6 rounded-3xl w-full md:w-64 my-4 shadow-xl">
+                            </motion.div>
+                            <motion.div
+                                initial={{ opacity: 0,y:300}}
+                                        transition={{ duration: 0.5}}
+                                        whileInView={{ opacity: 1,y:0  }}
+                                className="relative bg-white dark:bg-gray-700 py-6 px-6 rounded-3xl w-full md:w-64 my-4 shadow-xl">
                                 <div
                                     className=" text-white flex items-center absolute rounded-full py-4 px-4 shadow-xl bg-yellow-500 left-4 -top-6">
                                     <RiCustomerService2Line className="h-8 w-8"/>
@@ -83,132 +95,205 @@ const Services = () => {
                                             me →</a>
                                     </div>
                                 </div>
-                            </div>
+                            </motion.div>
                         </div>
                         <div  className='text-center w-full pb-5'>
-                            <h1 className='text-gray-700 dark:text-white text-2xl font-bold uppercase'>Skills</h1>
+                            <motion.h1
+                                initial={{ opacity: 0,y:300}}
+                                transition={{ duration: 0.5}}
+                                whileInView={{ opacity: 1,y:0  }}
+                                className='text-gray-700 dark:text-white text-2xl font-bold uppercase'>Skills</motion.h1>
                         </div>
                         <div className='w-full flex justify-evenly items-center md:items-start flex-wrap'>
                             <div className="w-full md:w-[35%] p-5 md:py-5 md:px-2">
-                                <h1 className='font-bold text-xl mb-4 text-center text-gray-800 dark:text-gray-200'>
+                                <motion.h1
+                                    initial={{ opacity: 0,y:300}}
+                                        transition={{ duration: 0.5}}
+                                        whileInView={{ opacity: 1,y:0  }}
+                                    className='font-bold text-xl mb-4 text-center text-gray-800 dark:text-gray-200'>
                                     Frontend Development
-                                </h1>
-                                <div className='w-full flex justify-center items-center gap-5 flex-wrap'>
-                                    <div className='block md:inline-block'>
-                                        <div className='flex items-center'>
+                                </motion.h1>
+                                <div className='w-full flex justify-between items-center gap-5 flex-wrap'>
+                                    <motion.div
+                                        initial={{ opacity: 0,y:300}}
+                                        transition={{ duration: 0.5}}
+                                        whileInView={{ opacity: 1,y:0  }}
+                                        className='w-full md:w-auto'>
+                                        <div className='flex items-center justify-between border-b-[1px] md:border-0 border-gray-400'>
                                             <AiFillHtml5 className='w-10 h-10 text-red-600'/>
-                                            <div className='pl-2 font-bold text-sm text-gray-800 dark:text-gray-300 gap-0'>
+                                            <div className='pl-2 font-bold text-sm text-gray-800 dark:text-gray-300 text-right md:text-left gap-0'>
                                                 HTML5 <br/>
                                                 <span className='text-xs font-normal'>Intermediate</span>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div className='block md:inline-block'>
-                                        <div className='flex items-center'>
+                                    </motion.div>
+                                    <motion.div
+                                        initial={{ opacity: 0,y:300}}
+                                        transition={{ duration: 0.5}}
+                                        whileInView={{ opacity: 1,y:0  }}
+                                        className='w-full md:w-auto'>
+                                        <div className='flex items-center justify-between border-b-[1px] md:border-0 border-gray-400'>
                                             <DiCss3 className='w-10 h-10 text-[#264de4]'/>
-                                            <div className='pl-2 font-bold text-sm text-gray-800 dark:text-gray-300 gap-0'>
+                                            <div className='pl-2 font-bold text-sm text-gray-800 dark:text-gray-300 text-right md:text-left gap-0'>
                                                 CSS3 <br/>
                                                 <span className='text-xs font-normal'>Intermediate</span>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div className='block md:inline-block'>
-                                        <div className='flex items-center'>
+                                    </motion.div>
+                                    <motion.div
+                                        initial={{ opacity: 0,y:300}}
+                                        transition={{ duration: 0.5}}
+                                        whileInView={{ opacity: 1,y:0  }}
+                                        className='w-full md:w-auto'>
+                                        <div className='flex items-center justify-between border-b-[1px] md:border-0 border-gray-400'>
                                             <SiJavascript className='w-8 h-8 text-yellow-500'/>
-                                            <div className='pl-2 font-bold text-sm text-gray-800 dark:text-gray-300 gap-0'>
+                                            <div className='pl-2 font-bold text-sm text-gray-800 dark:text-gray-300 text-right md:text-left gap-0'>
                                                 Javascript <br/>
                                                 <span className='text-xs font-normal'>Intermediate</span>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div className='block md:inline-block'>
-                                        <div className='flex items-center'>
+                                    </motion.div>
+                                    <motion.div
+                                        initial={{ opacity: 0,y:300}}
+                                        transition={{ duration: 0.5}}
+                                        whileInView={{ opacity: 1,y:0  }}
+                                        className='w-full md:w-auto'>
+                                        <div className='flex items-center justify-between border-b-[1px] md:border-0 border-gray-400'>
                                             <FaSass className='w-8 h-8 text-blue-400'/>
-                                            <div className='pl-2 font-bold text-sm text-gray-800 dark:text-gray-300 gap-0'>
+                                            <div className='pl-2 font-bold text-sm text-gray-800 dark:text-gray-300 text-right md:text-left gap-0'>
                                                 Sass <br/>
                                                 <span className='text-xs font-normal'>Intermediate</span>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div className='block md:inline-block'>
-                                        <div className='flex items-center'>
+                                    </motion.div>
+                                    <motion.div
+                                        initial={{ opacity: 0,y:300}}
+                                        transition={{ duration: 0.5}}
+                                        whileInView={{ opacity: 1,y:0  }}
+                                        className='w-full md:w-auto'>
+                                        <div className='flex items-center justify-between border-b-[1px] md:border-0 border-gray-400'>
                                             <SiTailwindcss className='w-8 h-8 text-blue-400'/>
-                                            <div className='pl-2 font-bold text-sm text-gray-800 dark:text-gray-300 gap-0'>
+                                            <div className='pl-2 font-bold text-sm text-gray-800 dark:text-gray-300 text-right md:text-left gap-0'>
                                                 Tailwindcss <br/>
                                                 <span className='text-xs font-normal'>Advanced</span>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div className='block md:inline-block'>
-                                        <div className='flex items-center'>
+                                    </motion.div>
+                                    <motion.div
+                                        initial={{ opacity: 0,y:300}}
+                                        transition={{ duration: 0.5}}
+                                        whileInView={{ opacity: 1,y:0  }}
+                                        className='w-full md:w-auto'>
+                                        <div className='flex items-center justify-between border-b-[1px] md:border-0 border-gray-400'>
                                             <RiReactjsFill className='w-8 h-8 text-blue-400'/>
-                                            <div className='pl-2 font-bold text-sm text-gray-800 dark:text-gray-300 gap-0'>
+                                            <div className='pl-2 font-bold text-sm text-gray-800 dark:text-gray-300 text-right md:text-left gap-0'>
                                                 React JS <br/>
                                                 <span className='text-xs font-normal'>Intermediate</span>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div className='block md:inline-block'>
-                                        <div className='flex items-center'>
+                                    </motion.div>
+                                    <motion.div
+                                        initial={{ opacity: 0,y:300}}
+                                        transition={{ duration: 0.5}}
+                                        whileInView={{ opacity: 1,y:0  }}
+                                        className='w-full md:w-auto'>
+                                        <div className='flex items-center justify-between border-b-[1px] md:border-0 border-gray-400'>
                                             <SiRedux className='w-8 h-8 text-blue-400'/>
-                                            <div className='pl-2 font-bold text-sm text-gray-800 dark:text-gray-300 gap-0'>
+                                            <div className='pl-2 font-bold text-sm text-gray-800 dark:text-gray-300 text-right md:text-left gap-0'>
                                                 Redux toolkit <br/>
                                                 <span className='text-xs font-normal'>Basic</span>
                                             </div>
                                         </div>
-                                    </div>
+                                    </motion.div>
                                 </div>
                             </div>
                             <div className="w-full md:w-[35%] p-5 md:py-5 md:px-2">
-                                <h1 className='font-bold text-xl mb-4 text-center text-gray-800 dark:text-gray-200'>
+                                <motion.h1
+                                    initial={{ opacity: 0,y:300}}
+                                        transition={{ duration: 0.5}}
+                                        whileInView={{ opacity: 1,y:0  }}
+                                    className='font-bold text-xl mb-4 text-center text-gray-800 dark:text-gray-200'>
                                     Backend Development
-                                </h1>
-                                <div className='w-full flex justify-center items-center gap-5 flex-wrap'>
-                                    <div className='block md:inline-block'>
-                                        <div className='flex items-center'>
+                                </motion.h1>
+                                <div className='w-full flex justify-between items-center gap-5 flex-wrap'>
+                                    <motion.div
+                                        initial={{ opacity: 0,y:300}}
+                                        transition={{ duration: 0.5}}
+                                        whileInView={{ opacity: 1,y:0  }}
+                                        className='w-full md:w-auto'>
+                                        <div className='flex items-center justify-between border-b-[1px] md:border-0 border-gray-400'>
                                             <SiPhp className='w-10 h-10 text-blue-400'/>
-                                            <div className='pl-2 font-bold text-sm text-gray-800 dark:text-gray-300 gap-0'>
+                                            <div className='pl-2 font-bold text-sm text-gray-800 dark:text-gray-300 text-right md:text-left gap-0'>
                                                 PHP <br/>
                                                 <span className='text-xs font-normal'>Basic</span>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div className='block md:inline-block'>
-                                        <div className='flex items-center'>
+                                    </motion.div>
+                                    <motion.div
+                                        initial={{ opacity: 0,y:300}}
+                                        transition={{ duration: 0.5}}
+                                        whileInView={{ opacity: 1,y:0  }}
+                                        className='w-full md:w-auto'>
+                                        <div className='flex items-center justify-between border-b-[1px] md:border-0 border-gray-400'>
+                                            <FaLaravel className='w-7 h-8 text-red-400'/>
+                                            <div className='pl-2 font-bold text-sm text-gray-800 dark:text-gray-300 text-right md:text-left gap-0'>
+                                                Laravel <br/>
+                                                <span className='text-xs font-normal'>Basic</span>
+                                            </div>
+                                        </div>
+                                    </motion.div>
+                                    <motion.div
+                                        initial={{ opacity: 0,y:300}}
+                                        transition={{ duration: 0.5}}
+                                        whileInView={{ opacity: 1,y:0  }}
+                                        className='w-full md:w-auto'>
+                                        <div className='flex items-center justify-between border-b-[1px] md:border-0 border-gray-400'>
                                             <SiMysql className='w-10 h-10 text-red-500'/>
-                                            <div className='pl-2 font-bold text-sm text-gray-800 dark:text-gray-300 gap-0'>
+                                            <div className='pl-2 font-bold text-sm text-gray-800 dark:text-gray-300 text-right md:text-left gap-0'>
                                                 My SQL <br/>
                                                 <span className='text-xs font-normal'>Basic</span>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div className='block md:inline-block'>
-                                        <div className='flex items-center'>
+                                    </motion.div>
+                                    <motion.div
+                                        initial={{ opacity: 0,y:300}}
+                                        transition={{ duration: 0.5}}
+                                        whileInView={{ opacity: 1,y:0  }}
+                                        className='w-full md:w-auto'>
+                                        <div className='flex items-center justify-between border-b-[1px] md:border-0 border-gray-400'>
                                             <SiMariadb className='w-8 h-8 text-yellow-500'/>
-                                            <div className='pl-2 font-bold text-sm text-gray-800 dark:text-gray-300 gap-0'>
+                                            <div className='pl-2 font-bold text-sm text-gray-800 dark:text-gray-300 text-right md:text-left gap-0'>
                                                 MariaDB <br/>
                                                 <span className='text-xs font-normal'>Basic</span>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div className='block md:inline-block'>
-                                        <div className='flex items-center'>
+                                    </motion.div>
+                                    <motion.div
+                                        initial={{ opacity: 0,y:300}}
+                                        transition={{ duration: 0.5}}
+                                        whileInView={{ opacity: 1,y:0  }}
+                                        className='w-full md:w-auto'>
+                                        <div className='flex items-center justify-between border-b-[1px] md:border-0 border-gray-400'>
                                             <BsGit className='w-8 h-8 text-red-600'/>
-                                            <div className='pl-2 font-bold text-sm text-gray-800 dark:text-gray-300 gap-0'>
+                                            <div className='pl-2 font-bold text-sm text-gray-800 dark:text-gray-300 text-right md:text-left gap-0'>
                                                 Git <br/>
                                                 <span className='text-xs font-normal'>Intermediate</span>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div className='block md:inline-block'>
-                                        <div className='flex items-center'>
+                                    </motion.div>
+                                    <motion.div
+                                        initial={{ opacity: 0,y:300}}
+                                        transition={{ duration: 0.5}}
+                                        whileInView={{ opacity: 1,y:0  }}
+                                        className='w-full md:w-auto'>
+                                        <div className='flex items-center justify-between border-b-[1px] md:border-0 border-gray-400'>
                                             <FcLinux className='w-8 h-8 text-blue-400'/>
-                                            <div className='pl-2 font-bold text-sm text-gray-800 dark:text-gray-300 gap-0'>
+                                            <div className='pl-2 font-bold text-sm text-gray-800 dark:text-gray-300 text-right md:text-left gap-0'>
                                                 Linux <br/>
                                                 <span className='text-xs font-normal'>Basic</span>
                                             </div>
                                         </div>
-                                    </div>
+                                    </motion.div>
                                 </div>
                             </div>
                         </div>

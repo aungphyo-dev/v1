@@ -1,7 +1,8 @@
-import Touch from '../assets/img/icon/Get in touch-bro.svg'
+
 import {useState} from "react";
-import {AiFillPhone,AiTwotoneMail} from 'react-icons/ai';
-import {MdLocationPin} from 'react-icons/md'
+import {AiFillPhone} from 'react-icons/ai';
+import {MdEmail,MdLocationPin} from 'react-icons/md'
+import {BiMessageSquareDetail} from 'react-icons/bi'
 import {motion} from "framer-motion";
 import {easeIn} from "framer-motion/dom";
 
@@ -27,47 +28,71 @@ const Contact = () => {
                         <div className='text-center w-full pb-5'>
                             <h1 className='text-gray-700 dark:text-white text-3xl font-bold uppercase'>Contact me</h1>
                         </div>
-                        <div className="w-full mb-5 pb-5">
-                            <div className='flex justify-evenly items-center p-3 flex-wrap gap-4'>
-                                <motion.div
-                                    initial={{ opacity: 0,y:-200}}
-                                    transition={{ duration: 0.5 ,delay:0.2,velocity:easeIn}}
-                                    whileInView={{ opacity: 1,y:0  }}
-                                    className='dark:text-white text-gray-600 w-full md:w-2/4 md:mx-auto lg:w-[20%] flex flex-col justify-center items-center bg-card py-5 gap-y-4 rounded-xl shadow-md dark:bg-gray-700'>
-                                    <AiFillPhone className='text-4xl mb-3'/>
-                                    <a href="tel:09776706992">09776706992</a>
-                                </motion.div>
-                                <motion.div
-                                    initial={{ opacity: 0,y:-200}}
-                                    transition={{ duration: 0.5 ,delay:0.2,velocity:easeIn}}
-                                    whileInView={{ opacity: 1,y:0  }}
-                                    className='dark:text-white text-gray-600 w-full md:w-2/4 md:mx-auto lg:w-[40%] flex flex-col justify-center items-center bg-card py-5 gap-y-4 rounded-xl shadow-md dark:bg-gray-700'>
-                                    <AiTwotoneMail className='text-4xl mb-3'/>
-                                    <a href="mailto:aungpyaephyo1145@gmail.com">aungpyaephyo1145@gmail.com</a>
-                                </motion.div>
-                                <motion.div
-                                    initial={{ opacity: 0,y:-200}}
-                                    transition={{ duration: 0.5 ,delay:0.2,velocity:easeIn}}
-                                    whileInView={{ opacity: 1,y:0  }}
-                                    className='dark:text-white text-gray-600 w-full md:w-2/4 md:mx-auto lg:w-[30%] flex flex-col justify-center items-center bg-card py-5 gap-y-4 rounded-xl shadow-md dark:bg-gray-700'>
-                                    <MdLocationPin className='text-4xl mb-3'/>
-                                    <a href="https://goo.gl/maps/1wKXW9j3bTp5sifh6" target='_blank'>Mandalay,Kyaukse,Kyaukse</a>
-                                </motion.div>
+                        <div className='w-full flex justify-between lg:justify-evenly items-start flex-wrap p-3 lg:p-0'>
+                            <div className="w-full md:w-[40%] flex flex-col justify-center gap-y-4 items-stretch mb-5 md:mb-0">
+                                    <motion.div
+                                        initial={{ opacity: 0,y:300}}
+                                transition={{ duration: 0.5 ,delay:0.2,velocity:easeIn}}
+                                whileInView={{ opacity: 1,y:0  }}
+                                        className="flex items-center h-[125px] dark:bg-gray-700 rounded-xl bg-white p-4 shadow-lg">
+                                        <div className="flex h-12 w-12 items-center justify-center rounded-full border border-blue-100 bg-blue-50">
+                                            <AiFillPhone className='h-6 w-6 text-blue-400'/>
+                                        </div>
+
+                                        <div className="ml-4">
+                                            <h2 className="font-semibold dark:text-gray-200">Phone</h2>
+                                            <a href='tel:+959776706992' className="mt-2 text-sm text-gray-500 dark:text-gray-400">+959776706992</a>
+                                        </div>
+                                    </motion.div>
+
+                                    <motion.div
+                                        initial={{ opacity: 0,y:300}}
+                                transition={{ duration: 0.5 ,delay:0.2,velocity:easeIn}}
+                                whileInView={{ opacity: 1,y:0  }}
+                                        className="flex items-center h-[125px] dark:bg-gray-700 rounded-xl bg-white p-4 shadow-lg">
+                                        <div className="flex h-12 w-12 items-center justify-center rounded-full border border-orange-100 bg-orange-50">
+                                            <MdEmail className='h-6 w-6 text-orange-400'/>
+                                        </div>
+
+                                        <div className="ml-4 overflow-x-hidden">
+                                            <h2 className="font-semibold dark:text-gray-200">Email</h2>
+                                            <a href='mailto:aungpyaephyo1145@gmail.com' className="mt-2 text-sm text-gray-500 dark:text-gray-400 truncate">aungpyaephyo1145@gmail.com</a>
+                                        </div>
+                                    </motion.div>
+                                    <motion.div
+                                        initial={{ opacity: 0,y:300}}
+                                transition={{ duration: 0.5 ,delay:0.2,velocity:easeIn}}
+                                whileInView={{ opacity: 1,y:0  }}
+                                        className="flex items-center h-[125px] dark:bg-gray-700 rounded-xl bg-white p-4 shadow-lg">
+                                        <div className="flex h-12 w-12 items-center justify-center rounded-full border border-red-100 bg-red-50">
+                                            <BiMessageSquareDetail className='h-6 w-6 text-red-400'/>
+                                        </div>
+
+                                        <div className="ml-4">
+                                            <h2 className="font-semibold dark:text-gray-200">Text message</h2>
+                                            <p  className="mt-2 text-sm text-gray-500 dark:text-gray-400">+959776706992</p>
+                                        </div>
+                                    </motion.div>
+                                    <motion.div
+                                        initial={{ opacity: 0,y:300}}
+                                transition={{ duration: 0.5 ,delay:0.2,velocity:easeIn}}
+                                whileInView={{ opacity: 1,y:0  }}
+                                        className="flex items-center h-[125px] dark:bg-gray-700 rounded-xl bg-white p-4 shadow-lg">
+                                        <div className="flex h-12 w-12 items-center justify-center rounded-full border border-indigo-100 bg-indigo-50">
+                                            <MdLocationPin className='h-6 w-6 text-indigo-400'/>
+                                        </div>
+
+                                        <div className="ml-4">
+                                            <h2 className="font-semibold dark:text-gray-200">Location</h2>
+                                            <a target='_blank' href='https://goo.gl/maps/ijA9whuD3TDjcYP87' className="mt-2 text-sm text-gray-500 dark:text-gray-400">Mandalay,Myanmar</a>
+                                        </div>
+                                    </motion.div>
                             </div>
-                        </div>
-                        <div className='w-full flex justify-between items-center flex-wrap p-3 lg:p-0'>
                             <motion.div
-                                initial={{ opacity: 0,y:-200}}
+                                initial={{ opacity: 0,y:300}}
                                 transition={{ duration: 0.5 ,delay:0.2,velocity:easeIn}}
                                 whileInView={{ opacity: 1,y:0  }}
-                                className="w-full lg:w-[45%]">
-                                <img src={Touch} alt=""/>
-                            </motion.div>
-                            <motion.div
-                                initial={{ opacity: 0,y:-200}}
-                                transition={{ duration: 0.5 ,delay:0.2,velocity:easeIn}}
-                                whileInView={{ opacity: 1,y:0  }}
-                                className="w-full lg:w-[45%]">
+                                className="w-full md:w-[55%] lg:w-[45%]">
                                 <form className='bg-form p-3 md:p-5 rounded-lg shadow-md dark:bg-gray-700' onSubmit={handleSubmit}>
                                     <div className='text-center font-semibold text-2xl uppercase text-white pb-5'>
                                         Get in touch
