@@ -10,28 +10,34 @@ const About = () => {
                 <div className='min-h-screen container mx-auto flex justify-center items-center flex-wrap px-3'>
                     <div>
                         <div className='w-full  text-center'>
-                            <motion.div
-                                initial={{ opacity: 0,y:200}}
-                                transition={{ duration: 0.5}}
-                                whileInView={{ opacity: 1,y:0  }}
+                            <div
                                 className='text-center w-full my-5'>
-                                <h1 className='text-md text-gray-800 dark:text-gray-400 mb-2'>My abilities</h1>
-                                <h1 className='text-xl text-blue-600 font-bold text-2xl'>My Experience</h1>
-                            </motion.div>
+                                <motion.h1
+                                    initial={{ opacity: 0,y:50}}
+                                transition={{ duration: 0.5,delay:0.1}}
+                                whileInView={{ opacity: 1,y:0  }}
+                                    className='text-md text-gray-800 dark:text-gray-400 mb-2'>My abilities</motion.h1>
+                                <motion.h1
+                                    initial={{ opacity: 0,y:50}}
+                                transition={{ duration: 0.5,delay:0.2}}
+                                whileInView={{ opacity: 1,y:0  }}
+                                    className='text-xl text-blue-600 font-bold text-2xl'>My Experience</motion.h1>
+                            </div>
                         </div>
                         <div className='w-full flex items-center lg:items-start flex-wrap flex-col-reverse lg:flex-row'>
-                            <motion.div initial={{ opacity: 0,y:300}}
-                                        transition={{ duration: 0.7}}
-                                        whileInView={{ opacity: 1,y:0  }}
-                                        className='w-full lg:w-[35%] text-white'>
-                                <img src={AboutPic} className='h-auto w-full  rounded-xl lg:h-[350px] mx-auto lg:w-[500px] object-cover obj-po' alt=""/>
-                            </motion.div>
+                            <div className='w-full lg:w-[35%]'>
+                                <motion.img
+                                    initial={{ opacity: 0,y:50}}
+                                    transition={{ duration: 0.7}}
+                                    whileInView={{ opacity: 1,y:0  }}
+                                    src={AboutPic} className='h-auto w-full  rounded-xl lg:h-[350px] mx-auto lg:w-[500px] object-cover obj-po' alt=""/>
+                            </div>
                             <div
                                         className='w-full lg:w-[65%] p-0 lg:pl-5 flex md:flex-col flex-col-reverse'>
                                 <div className='flex items-center lg:justify-start justify-center flex-wrap gap-x-3 gap-y-3 mb-4'>
                                     <motion.div
-                                        initial={{ opacity: 0,y:300}}
-                                        transition={{ duration: 0.5}}
+                                        initial={{ opacity: 0,y:50}}
+                                        transition={{ duration: 0.5,delay:0.1}}
                                         whileInView={{ opacity: 1,y:0  }}
                                         className="w-full md:w-auto p-6 dark:bg-gray-700 bg-gray-100 rounded-lg">
                                         <div className="mb-5">
@@ -52,8 +58,8 @@ const About = () => {
                                         </p>
                                     </motion.div>
                                     <motion.div
-                                        initial={{ opacity: 0,y:300}}
-                                        transition={{ duration: 0.5}}
+                                        initial={{ opacity: 0,y:50}}
+                                        transition={{ duration: 0.5,delay:0.2}}
                                         whileInView={{ opacity: 1,y:0  }}
                                         className="w-full md:w-auto p-6 dark:bg-gray-700 bg-gray-100 rounded-lg">
                                         <div className="mb-5">
@@ -74,8 +80,8 @@ const About = () => {
                                         </p>
                                     </motion.div>
                                     <motion.div
-                                        initial={{ opacity: 0,y:300}}
-                                        transition={{ duration: 0.5}}
+                                        initial={{ opacity: 0,y:50}}
+                                        transition={{ duration: 0.5,delay:0.3}}
                                         whileInView={{ opacity: 1,y:0  }}
                                         className="w-full md:w-auto p-6 dark:bg-gray-700 bg-gray-100 rounded-lg">
 
@@ -101,8 +107,8 @@ const About = () => {
                                         </p>
                                     </motion.div>
                                     <motion.div
-                                        initial={{ opacity: 0,y:300}}
-                                        transition={{ duration: 0.5}}
+                                        initial={{ opacity: 0,y:50}}
+                                        transition={{ duration: 0.5,delay:0.4}}
                                         whileInView={{ opacity: 1,y:0  }}
                                         className="w-full md:w-auto p-6 dark:bg-gray-700 bg-gray-100 rounded-lg">
 
@@ -131,14 +137,18 @@ const About = () => {
 
                                 <div className='mb-4 flex flex-col lg:justify-center items-center  lg:items-start'>
                                     <motion.p
-                                        initial={{ opacity: 0,y:300}}
-                                        transition={{ duration: 0.5}}
-                                        whileInView={{ opacity: 1,y:0  }}
+                                        initial={{ opacity: 0,y:50}}
+                                        transition={{ duration: 0.5,delay:0.5}}
+                                        whileInView={{ opacity: 1,y:0 }}
                                         className='w-full md:w-3/4 mx-auto lg:mx-0 text-xl text-start text-gray-700 dark:text-gray-300  leading-8 tracking-wide pb-5 pt-3 px-3'>I'm a junior website developer with experience in
                                         JavaScript, and expertise in framework like React.</motion.p>
-                                    <a href='#contact'
+                                    <motion.a
+                                        initial={{ opacity: 0,y:50}}
+                                        transition={{ duration: 0.5,delay:0.6}}
+                                        whileInView={{ opacity: 1,y:0}}
+                                        href='#contact'
                                        className="md:block hidden text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center ">Contact Me
-                                    </a>
+                                    </motion.a>
                                 </div>
                             </div>
                         </div>

@@ -46,7 +46,7 @@ const Navbar = () => {
             transition={{ duration: 0.5}}
             animate={{ y: 0,opacity:1 }}
             className="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 left-0">
-            <div className="container flex flex-wrap shadow-md items-center justify-between mx-auto bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-900">
+            <div className="container flex flex-wrap border-b-2 items-center justify-between mx-auto bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-900">
                 <Link to='/'  onClick={homeGoHandler} className="flex items-center">
                     <img src={Logo} className="h-6 mr-3 sm:h-9"
                          alt="Logo"/>
