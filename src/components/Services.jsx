@@ -1,16 +1,5 @@
 
 import {RiCustomerService2Line} from 'react-icons/ri'
-import {AiFillHtml5} from 'react-icons/ai'
-import {DiCss3} from 'react-icons/di'
-import {SiJavascript} from 'react-icons/si'
-import {BsFillBootstrapFill,BsGit} from 'react-icons/bs'
-import {FaSass,FaLaravel} from 'react-icons/fa'
-import {SiTailwindcss} from 'react-icons/si'
-import {RiReactjsFill} from 'react-icons/ri'
-import {SiRedux} from 'react-icons/si'
-import {SiPhp} from 'react-icons/si'
-import {FcLinux} from 'react-icons/fc'
-import {SiMysql,SiMariadb} from 'react-icons/si'
 import {motion} from "framer-motion";
 import {easeIn} from "framer-motion/dom";
 
@@ -108,197 +97,206 @@ const Services = () => {
                                 whileInView={{ opacity: 1,y:0  }}
                                 className='text-gray-700 dark:text-white text-2xl font-bold uppercase'>Skills</motion.h1>
                         </div>
-                        <div className='w-full flex justify-evenly items-center md:items-start flex-wrap'>
-                            <div className="w-full md:w-[35%] p-5 md:py-5 md:px-2">
-                                <motion.h1
-                                    initial={{ opacity: 0,y:50}}
-                                transition={{ duration: 0.5,delay:0.2,velocity:easeIn }}
-                                whileInView={{ opacity: 1,y:0  }}
-                                    className='font-bold text-xl mb-4 text-center text-gray-800 dark:text-gray-200'>
-                                    Frontend Development
-                                </motion.h1>
-                                <div className='w-full flex justify-between items-center gap-5 flex-wrap'>
-                                    <motion.div
+                        <div className='flex justify-evenly items-center flex-wrap w-full'>
+                            <div className='w-full md:w-2/4 lg:w-[45%] mb-5 md:mb-0'>
+                                <div className='w-full mb-5'>
+                                    <motion.h1
                                         initial={{ opacity: 0,y:50}}
-                                transition={{ duration: 0.5,delay:0.1,velocity:easeIn }}
-                                whileInView={{ opacity: 1,y:0  }}
-                                        className='w-full md:w-auto'>
-                                        <div className='flex items-center justify-between border-b-[1px] md:border-0 border-gray-400'>
-                                            <AiFillHtml5 className='w-10 h-10 text-red-600'/>
-                                            <div className='pl-2 font-bold text-sm text-gray-800 dark:text-gray-300 text-right md:text-left gap-0'>
-                                                HTML5 <br/>
-                                                <span className='text-xs font-normal'>Intermediate</span>
-                                            </div>
-                                        </div>
-                                    </motion.div>
-                                    <motion.div
-                                        initial={{ opacity: 0,y:50}}
-                                transition={{ duration: 0.5,delay:0.1,velocity:easeIn }}
-                                whileInView={{ opacity: 1,y:0  }}
-                                        className='w-full md:w-auto'>
-                                        <div className='flex items-center justify-between border-b-[1px] md:border-0 border-gray-400'>
-                                            <DiCss3 className='w-10 h-10 text-[#264de4]'/>
-                                            <div className='pl-2 font-bold text-sm text-gray-800 dark:text-gray-300 text-right md:text-left gap-0'>
-                                                CSS3 <br/>
-                                                <span className='text-xs font-normal'>Intermediate</span>
-                                            </div>
-                                        </div>
-                                    </motion.div>
-                                    <motion.div
-                                        initial={{ opacity: 0,y:50}}
-                                transition={{ duration: 0.5,delay:0.1,velocity:easeIn }}
-                                whileInView={{ opacity: 1,y:0  }}
-                                        className='w-full md:w-auto'>
-                                        <div className='flex items-center justify-between border-b-[1px] md:border-0 border-gray-400'>
-                                            <SiJavascript className='w-8 h-8 text-yellow-500'/>
-                                            <div className='pl-2 font-bold text-sm text-gray-800 dark:text-gray-300 text-right md:text-left gap-0'>
-                                                Javascript <br/>
-                                                <span className='text-xs font-normal'>Intermediate</span>
-                                            </div>
-                                        </div>
-                                    </motion.div>
-                                    <motion.div
-                                        initial={{ opacity: 0,y:50}}
-                                transition={{ duration: 0.5,delay:0.1,velocity:easeIn }}
-                                whileInView={{ opacity: 1,y:0  }}
-                                        className='w-full md:w-auto'>
-                                        <div className='flex items-center justify-between border-b-[1px] md:border-0 border-gray-400'>
-                                            <FaSass className='w-8 h-8 text-blue-400'/>
-                                            <div className='pl-2 font-bold text-sm text-gray-800 dark:text-gray-300 text-right md:text-left gap-0'>
-                                                Sass <br/>
-                                                <span className='text-xs font-normal'>Intermediate</span>
-                                            </div>
-                                        </div>
-                                    </motion.div>
-                                    <motion.div
-                                        initial={{ opacity: 0,y:50}}
-                                transition={{ duration: 0.5,delay:0.1,velocity:easeIn }}
-                                whileInView={{ opacity: 1,y:0  }}
-                                        className='w-full md:w-auto'>
-                                        <div className='flex items-center justify-between border-b-[1px] md:border-0 border-gray-400'>
-                                            <SiTailwindcss className='w-8 h-8 text-blue-400'/>
-                                            <div className='pl-2 font-bold text-sm text-gray-800 dark:text-gray-300 text-right md:text-left gap-0'>
-                                                Tailwindcss <br/>
-                                                <span className='text-xs font-normal'>Advanced</span>
-                                            </div>
-                                        </div>
-                                    </motion.div>
-                                    <motion.div
-                                        initial={{ opacity: 0,y:50}}
-                                transition={{ duration: 0.5,delay:0.1,velocity:easeIn }}
-                                whileInView={{ opacity: 1,y:0  }}
-                                        className='w-full md:w-auto'>
-                                        <div className='flex items-center justify-between border-b-[1px] md:border-0 border-gray-400'>
-                                            <RiReactjsFill className='w-8 h-8 text-blue-400'/>
-                                            <div className='pl-2 font-bold text-sm text-gray-800 dark:text-gray-300 text-right md:text-left gap-0'>
-                                                React JS <br/>
-                                                <span className='text-xs font-normal'>Intermediate</span>
-                                            </div>
-                                        </div>
-                                    </motion.div>
-                                    <motion.div
-                                        initial={{ opacity: 0,y:50}}
-                                transition={{ duration: 0.5,delay:0.1,velocity:easeIn }}
-                                whileInView={{ opacity: 1,y:0  }}
-                                        className='w-full md:w-auto'>
-                                        <div className='flex items-center justify-between border-b-[1px] md:border-0 border-gray-400'>
-                                            <SiRedux className='w-8 h-8 text-blue-400'/>
-                                            <div className='pl-2 font-bold text-sm text-gray-800 dark:text-gray-300 text-right md:text-left gap-0'>
-                                                Redux toolkit <br/>
-                                                <span className='text-xs font-normal'>Basic</span>
-                                            </div>
-                                        </div>
-                                    </motion.div>
+                                        transition={{ duration: 0.5,delay:0.1,velocity:easeIn }}
+                                        whileInView={{ opacity: 1,y:0  }}
+                                        className='text-center dark:text-gray-200'>Frontend Development</motion.h1>
                                 </div>
+                                <motion.div
+                                    initial={{ opacity: 0,y:50}}
+                                transition={{ duration: 0.5,delay:0.1,velocity:easeIn }}
+                                whileInView={{ opacity: 1,y:0  }}
+                                    className='w-full flex justify-center items-center flex-wrap px-0 md:px-5 py-3'>
+                                    <div className='w-full flex justify-between items-center pb-2'>
+                                        <h1 className='dark:text-gray-200 text-gray-700'>Html</h1>
+                                        <p className='dark:text-gray-200 text-gray-700'>78%</p>
+                                    </div>
+                                    <div className='w-full h-1 bg-cyan-300 overflow-x-hidden'>
+                                        <div className="w-[78%] h-1 bg-blue-500"></div>
+                                    </div>
+                                </motion.div>
+                                <motion.div
+                                    initial={{ opacity: 0,y:50}}
+                                transition={{ duration: 0.5,delay:0.1,velocity:easeIn }}
+                                whileInView={{ opacity: 1,y:0  }}
+                                    className='w-full flex justify-center items-center flex-wrap px-0 md:px-5 py-3'>
+                                    <div className='w-full flex justify-between items-center pb-2'>
+                                        <h1 className='dark:text-gray-200 text-gray-700'>CSS</h1>
+                                        <p className='dark:text-gray-200 text-gray-700'>75%</p>
+                                    </div>
+                                    <div className='w-full h-1 bg-cyan-300'>
+                                        <div className="w-[70%] h-1 bg-blue-500"></div>
+                                    </div>
+                                </motion.div>
+                                <motion.div
+                                    initial={{ opacity: 0,y:50}}
+                                transition={{ duration: 0.5,delay:0.1,velocity:easeIn }}
+                                whileInView={{ opacity: 1,y:0  }}
+                                    className='w-full flex justify-center items-center flex-wrap px-0 md:px-5 py-3'>
+                                    <div className='w-full flex justify-between items-center pb-2'>
+                                        <h1 className='dark:text-gray-200 text-gray-700'>Javascript</h1>
+                                        <p className='dark:text-gray-200 text-gray-700'>70%</p>
+                                    </div>
+                                    <div className='w-full h-1 bg-cyan-300'>
+                                        <div className="w-[70%] h-1 bg-blue-500"></div>
+                                    </div>
+                                </motion.div>
+                                <motion.div
+                                    initial={{ opacity: 0,y:50}}
+                                transition={{ duration: 0.5,delay:0.1,velocity:easeIn }}
+                                whileInView={{ opacity: 1,y:0  }}
+                                    className='w-full flex justify-center items-center flex-wrap px-0 md:px-5 py-3'>
+                                    <div className='w-full flex justify-between items-center pb-2'>
+                                        <h1 className='dark:text-gray-200 text-gray-700'>Bootstrap</h1>
+                                        <p className='dark:text-gray-200 text-gray-700'>68%</p>
+                                    </div>
+                                    <div className='w-full h-1 bg-cyan-300'>
+                                        <div className="w-[68%] h-1 bg-blue-500"></div>
+                                    </div>
+                                </motion.div>
+                                <motion.div
+                                    initial={{ opacity: 0,y:50}}
+                                transition={{ duration: 0.5,delay:0.1,velocity:easeIn }}
+                                whileInView={{ opacity: 1,y:0  }}
+                                    className='w-full flex justify-center items-center flex-wrap px-0 md:px-5 py-3'>
+                                    <div className='w-full flex justify-between items-center pb-2'>
+                                        <h1 className='dark:text-gray-200 text-gray-700'>Tailwindcss</h1>
+                                        <p className='dark:text-gray-200 text-gray-700'>95%</p>
+                                    </div>
+                                    <div className='w-full h-1 bg-cyan-300'>
+                                        <div className="w-[95%] h-1 bg-blue-500"></div>
+                                    </div>
+                                </motion.div>
+                                <motion.div
+                                    initial={{ opacity: 0,y:50}}
+                                transition={{ duration: 0.5,delay:0.1,velocity:easeIn }}
+                                whileInView={{ opacity: 1,y:0  }}
+                                    className='w-full flex justify-center items-center flex-wrap px-0 md:px-5 py-3'>
+                                    <div className='w-full flex justify-between items-center pb-2'>
+                                        <h1 className='dark:text-gray-200 text-gray-700'>ReactJs</h1>
+                                        <p className='dark:text-gray-200 text-gray-700'>78%</p>
+                                    </div>
+                                    <div className='w-full h-1 bg-cyan-300'>
+                                        <div className="w-[78%] h-1 bg-blue-500"></div>
+                                    </div>
+                                </motion.div>
+                                <motion.div
+                                    initial={{ opacity: 0,y:50}}
+                                transition={{ duration: 0.5,delay:0.1,velocity:easeIn }}
+                                whileInView={{ opacity: 1,y:0  }}
+                                    className='w-full flex justify-center items-center flex-wrap px-0 md:px-5 py-3'>
+                                    <div className='w-full flex justify-between items-center pb-2'>
+                                        <h1 className='dark:text-gray-200 text-gray-700'>Redux Toolkit</h1>
+                                        <p className='dark:text-gray-200 text-gray-700'>58%</p>
+                                    </div>
+                                    <div className='w-full h-1 bg-cyan-300'>
+                                        <div className="w-[58%] h-1 bg-blue-500"></div>
+                                    </div>
+                                </motion.div>
                             </div>
-                            <div className="w-full md:w-[35%] p-5 md:py-5 md:px-2">
-                                <motion.h1
+                            <div className='w-full md:w-2/4 lg:w-[45%]'>
+                                <div className='w-full mb-5'>
+                                    <motion.h1
+                                        initial={{ opacity: 0,y:50}}
+                                        transition={{ duration: 0.5,delay:0.1,velocity:easeIn }}
+                                        whileInView={{ opacity: 1,y:0  }}
+                                        className='text-center dark:text-gray-200'>Backend Development</motion.h1>
+                                </div>
+                                <motion.div
                                     initial={{ opacity: 0,y:50}}
                                 transition={{ duration: 0.5,delay:0.1,velocity:easeIn }}
                                 whileInView={{ opacity: 1,y:0  }}
-                                    className='font-bold text-xl mb-4 text-center text-gray-800 dark:text-gray-200'>
-                                    Backend Development
-                                </motion.h1>
-                                <div className='w-full flex justify-between items-center gap-5 flex-wrap'>
-                                    <motion.div
-                                        initial={{ opacity: 0,y:50}}
+                                    className='w-full flex justify-center items-center flex-wrap px-0 md:px-5 py-3'>
+                                    <div className='w-full flex justify-between items-center pb-2'>
+                                        <h1 className='dark:text-gray-200 text-gray-700'>PHP</h1>
+                                        <p className='dark:text-gray-200 text-gray-700'>50%</p>
+                                    </div>
+                                    <div className='w-full h-1 bg-cyan-300'>
+                                        <div className="w-[50%] h-1 bg-blue-500"></div>
+                                    </div>
+                                </motion.div>
+                                <motion.div
+                                    initial={{ opacity: 0,y:50}}
                                 transition={{ duration: 0.5,delay:0.1,velocity:easeIn }}
                                 whileInView={{ opacity: 1,y:0  }}
-                                        className='w-full md:w-auto'>
-                                        <div className='flex items-center justify-between border-b-[1px] md:border-0 border-gray-400'>
-                                            <SiPhp className='w-10 h-10 text-blue-400'/>
-                                            <div className='pl-2 font-bold text-sm text-gray-800 dark:text-gray-300 text-right md:text-left gap-0'>
-                                                PHP <br/>
-                                                <span className='text-xs font-normal'>Basic</span>
-                                            </div>
-                                        </div>
-                                    </motion.div>
-                                    <motion.div
-                                        initial={{ opacity: 0,y:50}}
+                                    className='w-full flex justify-center items-center flex-wrap px-0 md:px-5 py-3'>
+                                    <div className='w-full flex justify-between items-center pb-2'>
+                                        <h1 className='dark:text-gray-200 text-gray-700'>Laravel</h1>
+                                        <p className='dark:text-gray-200 text-gray-700'>50%</p>
+                                    </div>
+                                    <div className='w-full h-1 bg-cyan-300'>
+                                        <div className="w-[50%] h-1 bg-blue-500"></div>
+                                    </div>
+                                </motion.div>
+                                <motion.div
+                                    initial={{ opacity: 0,y:50}}
                                 transition={{ duration: 0.5,delay:0.1,velocity:easeIn }}
                                 whileInView={{ opacity: 1,y:0  }}
-                                        className='w-full md:w-auto'>
-                                        <div className='flex items-center justify-between border-b-[1px] md:border-0 border-gray-400'>
-                                            <FaLaravel className='w-7 h-8 text-red-400'/>
-                                            <div className='pl-2 font-bold text-sm text-gray-800 dark:text-gray-300 text-right md:text-left gap-0'>
-                                                Laravel <br/>
-                                                <span className='text-xs font-normal'>Basic</span>
-                                            </div>
-                                        </div>
-                                    </motion.div>
-                                    <motion.div
-                                        initial={{ opacity: 0,y:50}}
+                                    className='w-full flex justify-center items-center flex-wrap px-0 md:px-5 py-3'>
+                                    <div className='w-full flex justify-between items-center pb-2'>
+                                        <h1 className='dark:text-gray-200 text-gray-700'>MySql</h1>
+                                        <p className='dark:text-gray-200 text-gray-700'>50%</p>
+                                    </div>
+                                    <div className='w-full h-1 bg-cyan-300'>
+                                        <div className="w-[50%] h-1 bg-blue-500"></div>
+                                    </div>
+                                </motion.div>
+                                <motion.div
+                                    initial={{ opacity: 0,y:50}}
                                 transition={{ duration: 0.5,delay:0.1,velocity:easeIn }}
                                 whileInView={{ opacity: 1,y:0  }}
-                                        className='w-full md:w-auto'>
-                                        <div className='flex items-center justify-between border-b-[1px] md:border-0 border-gray-400'>
-                                            <SiMysql className='w-10 h-10 text-red-500'/>
-                                            <div className='pl-2 font-bold text-sm text-gray-800 dark:text-gray-300 text-right md:text-left gap-0'>
-                                                My SQL <br/>
-                                                <span className='text-xs font-normal'>Basic</span>
-                                            </div>
-                                        </div>
-                                    </motion.div>
-                                    <motion.div
-                                        initial={{ opacity: 0,y:50}}
+                                    className='w-full flex justify-center items-center flex-wrap px-0 md:px-5 py-3'>
+                                    <div className='w-full flex justify-between items-center pb-2'>
+                                        <h1 className='dark:text-gray-200 text-gray-700'>MariaDb</h1>
+                                        <p className='dark:text-gray-200 text-gray-700'>50%</p>
+                                    </div>
+                                    <div className='w-full h-1 bg-cyan-300'>
+                                        <div className="w-[50%] h-1 bg-blue-500"></div>
+                                    </div>
+                                </motion.div>
+                                <motion.div
+                                    initial={{ opacity: 0,y:50}}
                                 transition={{ duration: 0.5,delay:0.1,velocity:easeIn }}
                                 whileInView={{ opacity: 1,y:0  }}
-                                        className='w-full md:w-auto'>
-                                        <div className='flex items-center justify-between border-b-[1px] md:border-0 border-gray-400'>
-                                            <SiMariadb className='w-8 h-8 text-yellow-500'/>
-                                            <div className='pl-2 font-bold text-sm text-gray-800 dark:text-gray-300 text-right md:text-left gap-0'>
-                                                MariaDB <br/>
-                                                <span className='text-xs font-normal'>Basic</span>
-                                            </div>
-                                        </div>
-                                    </motion.div>
-                                    <motion.div
-                                        initial={{ opacity: 0,y:50}}
+                                    className='w-full flex justify-center items-center flex-wrap px-0 md:px-5 py-3'>
+                                    <div className='w-full flex justify-between items-center pb-2'>
+                                        <h1 className='dark:text-gray-200 text-gray-700'>Git</h1>
+                                        <p className='dark:text-gray-200 text-gray-700'>75%</p>
+                                    </div>
+                                    <div className='w-full h-1 bg-cyan-300'>
+                                        <div className="w-[75%] h-1 bg-blue-500"></div>
+                                    </div>
+                                </motion.div>
+                                <motion.div
+                                    initial={{ opacity: 0,y:50}}
                                 transition={{ duration: 0.5,delay:0.1,velocity:easeIn }}
                                 whileInView={{ opacity: 1,y:0  }}
-                                        className='w-full md:w-auto'>
-                                        <div className='flex items-center justify-between border-b-[1px] md:border-0 border-gray-400'>
-                                            <BsGit className='w-8 h-8 text-red-600'/>
-                                            <div className='pl-2 font-bold text-sm text-gray-800 dark:text-gray-300 text-right md:text-left gap-0'>
-                                                Git <br/>
-                                                <span className='text-xs font-normal'>Intermediate</span>
-                                            </div>
-                                        </div>
-                                    </motion.div>
-                                    <motion.div
-                                        initial={{ opacity: 0,y:50}}
+                                    className='w-full flex justify-center items-center flex-wrap px-0 md:px-5 py-3'>
+                                    <div className='w-full flex justify-between items-center pb-2'>
+                                        <h1 className='dark:text-gray-200 text-gray-700'>Linux</h1>
+                                        <p className='dark:text-gray-200 text-gray-700'>58%</p>
+                                    </div>
+                                    <div className='w-full h-1 bg-cyan-300'>
+                                        <div className="w-[58%] h-1 bg-blue-500"></div>
+                                    </div>
+                                </motion.div>
+                                <motion.div
+                                    initial={{ opacity: 0,y:50}}
                                 transition={{ duration: 0.5,delay:0.1,velocity:easeIn }}
                                 whileInView={{ opacity: 1,y:0  }}
-                                        className='w-full md:w-auto'>
-                                        <div className='flex items-center justify-between border-b-[1px] md:border-0 border-gray-400'>
-                                            <FcLinux className='w-8 h-8 text-blue-400'/>
-                                            <div className='pl-2 font-bold text-sm text-gray-800 dark:text-gray-300 text-right md:text-left gap-0'>
-                                                Linux <br/>
-                                                <span className='text-xs font-normal'>Basic</span>
-                                            </div>
-                                        </div>
-                                    </motion.div>
-                                </div>
+                                    className='w-full flex justify-center items-center flex-wrap px-0 md:px-5 py-3'>
+                                    <div className='w-full flex justify-between items-center pb-2'>
+                                        <h1 className='dark:text-gray-200 text-gray-700'>Deployment</h1>
+                                        <p className='dark:text-gray-200 text-gray-700'>58%</p>
+                                    </div>
+                                    <div className='w-full h-1 bg-cyan-300'>
+                                        <div className="w-[58%] h-1 bg-blue-500"></div>
+                                    </div>
+                                </motion.div>
                             </div>
                         </div>
                     </div>

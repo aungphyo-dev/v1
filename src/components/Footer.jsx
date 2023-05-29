@@ -1,3 +1,5 @@
+// noinspection SpellCheckingInspection
+
 import {Link} from "react-router-dom";
 
 const Footer = () => {

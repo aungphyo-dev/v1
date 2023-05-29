@@ -1,3 +1,5 @@
+// noinspection JSUnusedGlobalSymbols
+
 const projects = [
     {
         id:1,
