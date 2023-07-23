@@ -1,6 +1,6 @@
 // noinspection ES6UnusedImports,SpellCheckingInspection
 
-import Heropic from '../assets/img/preview.png'
+// import Heropic from '../assets/img/preview.png';
 import {BiMouse,} from 'react-icons/bi'
 import {BsGithub} from 'react-icons/bs'
 import {FaLinkedin, FaFacebookSquare, FaYoutubeSquare, FaYoutube} from 'react-icons/fa'
@@ -70,7 +70,7 @@ const Home = () => {
                             whileInView={{ opacity: 1,y:0  }}
                             className="w-full lg:w-2/4 flex flex-col lg:flex-row justify-center items-center gap-5 p-3">
                             <div className='flex-1'>
-                                <img src={Heropic} className='w-full lg:w-[80%] lg:mx-auto h-auto object-contain obj-p lg:h-96 rounded-xl' alt=""/>
+                                {/*<img src={Heropic} className='w-full lg:w-[80%] lg:mx-auto h-auto object-contain obj-p lg:h-96 rounded-xl' alt=""/>*/}
                             </div>
                         </motion.div>
                     </div>
