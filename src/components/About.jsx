@@ -42,7 +42,7 @@ const About = () => {
                                     alt=""
                                 />
                             </div>
-                            <div className="w-full lg:w-[65%] p-0 lg:pl-5 flex md:flex-col flex-col-reverse">
+                            <div className="w-full lg:w-[65%] p-0 lg:pl-5 flex lg:flex-col flex-col-reverse">
                                 <div
                                     className="flex items-center lg:justify-start justify-center flex-wrap gap-4  mb-4">
                                     <motion.div
@@ -176,12 +176,12 @@ const About = () => {
                                     </motion.div>
                                 </div>
 
-                                <div className="mb-4 flex flex-col lg:justify-center items-center  lg:items-start">
+                                <div className="mb-4 flex flex-col lg:justify-center  lg:items-start px-4">
                                     <motion.p
                                         initial={{opacity: 0, y: 50}}
                                         transition={{duration: 0.5, delay: 0.5}}
                                         whileInView={{opacity: 1, y: 0}}
-                                        className="w-full md:w-3/4 mx-auto lg:mx-0 text-xl text-start text-gray-700 dark:text-gray-300  leading-8 tracking-wide pb-5 pt-3 px-3"
+                                        className="w-full lg:w-3/4 text-xl text-start text-gray-700 dark:text-gray-300  leading-8 tracking-wide pb-5 pt-3 px-3"
                                     >
                                         I'm a junior website developer with experience in
                                         JavaScript, and expertise in framework like React.
